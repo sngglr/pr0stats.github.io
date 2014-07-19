@@ -24,5 +24,9 @@
 			<li><code>SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
 			<li><code>SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
 		</ul>
+	 	
+	 	<!-- JavaScript sources -->
+	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script src="../js/script.js"></script>
 	</body>
 </html>
