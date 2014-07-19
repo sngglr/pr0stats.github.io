@@ -16,6 +16,10 @@ a {
 	color: #D23C22;
 }
 
+li {
+	line-height: 29pt;
+}
+
 a:hover {
 	color: #A7301B;
 }
@@ -27,7 +31,6 @@ img {
 code {
 	background-color: #f8f8f8;
 	padding: 10px;
-	line-height: 29pt;
 	outline: 1px solid #eaeaea;
 }
 
