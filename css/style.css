@@ -58,3 +58,25 @@ code {
 .meta a:hover {
 	color: #D23C22;
 }
+
+.to-top {
+	margin-top: 60px;
+	font-size: 10pt;
+	color: #D8D8D8;
+	font-weight: bold;
+	border: 1px solid #F6F6F6;
+	padding: 8px 18px 8px 16px;
+	display: block;
+	border-radius: 10%;
+	width: 20px;
+	text-align: center;
+}
+
+a.top-top:before {
+	content: '↑ ';
+}
+
+.to-top:hover {
+	background-color: #FAFAFA;
+	color: #D23C22;
+}
