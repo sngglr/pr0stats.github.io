@@ -7,8 +7,19 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53004741-1', 'auto');
 ga('send', 'pageview');
 
-// Eastereggs
 $(document).ready(function() {
+	// Eastereggs
+	$('.easteregg').click(function() {
+		alert('Herzlichen Glückwunsch, du hast ein Osterei gefunden!');
+	});
+	
+	// Image toggle
+	$('.image-toggle').hide();
+	$('.image-toggle-button').click(function() {
+		$(this).next('.image-toggle').show();
+		$(this).hide();
+		
+	});
 	$('.easteregg').click(function() {
 		alert('Herzlichen Glückwunsch, du hast ein Osterei gefunden!');
 	});

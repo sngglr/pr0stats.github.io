@@ -83,7 +83,6 @@ a.top-top:before {
 }
 
 .top10 {
-	margin-top: 60px;
 	padding-left: 0;
 }
 
@@ -96,7 +95,8 @@ a.top-top:before {
 	width: 128px;
 	vertical-align: top;
 	margin-right: 92px;
-	margin-bottom: 100px;
+	margin-top: 60px;
+	margin-bottom: 40px;
 }
 
 .top10 .user {
@@ -145,4 +145,18 @@ a.top-top:before {
 	font-size: 34pt;
 	color: #888;
 	display: block;
+}
+
+.image-toggle {
+	display: block;
+	margin-bottom: 60px;
+}
+
+
+.image-toggle-button {
+	display: block;
+	cursor: pointer;
+	color: #888;
+	margin-bottom: 60px;
+	font-size: 10pt;
 }
