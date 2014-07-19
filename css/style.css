@@ -149,7 +149,7 @@ a.top-top:before {
 
 .image-toggle {
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 
@@ -157,6 +157,6 @@ a.top-top:before {
 	display: block;
 	cursor: pointer;
 	color: #888;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	font-size: 10pt;
 }
