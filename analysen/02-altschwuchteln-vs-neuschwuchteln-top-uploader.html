@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Altschwuchteln vs. Neuschwuchteln - Top Uploader - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p><a href="../index.html">← zurück zum Index</a></p>
+
+		<h1>Altschwuchteln vs. Neuschwuchteln - Top Uploader</h1>
+		<img src="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png" alt="Altschwuchteln vs. Neuschwuchteln - Top Uploader" />
+
+		<h2>Annahmen</h2>
+		<ul>
+			<li>Uploads von user "anonymous" waren nicht user-spezifische Uploads (z.B. aus IRC)</li>
+			<li>Relaunch war am 03.05.2014 um 14:59 (siehe <a href="https://twitter.com/pr0gramm/status/462577172507795456">Tweet zum Relaunch</a>)</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
+			<li><code>SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
+		</ul>
+	</body>
+</html>

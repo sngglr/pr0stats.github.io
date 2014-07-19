@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Uploads nach Quartal, Tag im Monat, Wochentag - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p><a href="../index.html">← zurück zum Index</a></p>
+
+		<h1>Uploads nach Quartal, Tag im Monat, Wochentag</h1>
+		<img src="../img/03-uploads-nach-quartal-tag-wochentag.png" alt="Uploads nach Quartal, Tag im Monat, Wochentag" />
+
+		<h2>Annahmen</h2>
+		<ul>
+			<li>Erhebungszeitraum 23.01.2007 bis 15.07.2014</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT YEAR(FROM_UNIXTIME(created)) AS year, QUARTER(FROM_UNIXTIME(created)) AS quarter, COUNT(*) AS amount FROM `stats` GROUP BY year, quarter ORDER BY year ASC, quarter ASC</code></li>
+			<li><code>SELECT WEEKDAY(FROM_UNIXTIME(`created`)) AS `weekday`, COUNT(*) AS `amount` FROM `stats` GROUP BY `weekday`</code></li>
+			<li><code>SELECT DAY(FROM_UNIXTIME(`created`)) AS `day`, COUNT(*) AS `amount` FROM `stats` GROUP BY `day` ORDER BY `day` ASC</code></li>
+		</ul>
+	</body>
+</html>

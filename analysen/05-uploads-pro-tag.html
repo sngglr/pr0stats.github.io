@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Uploads pro Tag - vor und nach Relaunch - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p><a href="../index.html">← zurück zum Index</a></p>
+
+		<h1>Uploads pro Tag - vor und nach Relaunch</h1>
+		<img src="../img/05-uploads-pro-tag.png" alt="Uploads pro Tag - vor und nach Relaunch" />
+
+		<h2>Annahmen</h2>
+		<ul>
+			<li>Relaunch war am 03.05.2014 um 14:59 (siehe <a href="https://twitter.com/pr0gramm/status/462577172507795456">Tweet zum Relaunch</a>)</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00'</code></li>
+			<li><code>SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00'</code></li>
+		</ul>
+	</body>
+</html>

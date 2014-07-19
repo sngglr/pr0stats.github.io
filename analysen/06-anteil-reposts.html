@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Anteil Reposts - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p><a href="../index.html">← zurück zum Index</a></p>
+
+		<h1>Anteil Reposts</h1>
+		<img src="../img/06-anteil-reposts.png" alt="Anteil Reposts" />
+
+		<h2>Konkrete Resultate</h2>
+		<ul>
+			<li>200842 Einträge</li>
+			<li>Davon 16360 Reposts (Definition siehe Annahmen)</li>
+			<li>Ergibt einen Repost-Quotienten von 0,081457066 bzw. einen Prozentsatz von 8,145706575%</li>
+		</ul>
+
+		<h2>Annahmen</h2>
+		<ul>
+			<li>Repost im Sinne dieser Analyse ist jeder Upload, der mit dem Tag "repost" oder einem Tag, der den String "repost" enthält, versehen wurde</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT (SUM(IF(`tags` LIKE '%repost%’, 1, 0)) * 100)/COUNT(*) FROM `stats`</code></li>
+		</ul>
+	</body>
+</html>

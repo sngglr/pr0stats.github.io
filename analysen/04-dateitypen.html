@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Dateitypen - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p><a href="../index.html">← zurück zum Index</a></p>
+
+		<h1>Dateitypen</h1>
+		<img src="../img/04-dateitypen.png" alt="Dateitypen" />
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT SUBSTRING_INDEX(`image`, '.’, -1) AS `extension`, COUNT(*) AS `amount` FROM `stats` GROUP BY `extension` ORDER BY `amount` DESC</code></li>
+			<li>Alle 'jpeg'-Elemente werden zur Klasse 'jpg' hinzugefügt</li>
+		</ul>
+	</body>
+</html>
