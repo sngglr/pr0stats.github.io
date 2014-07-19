@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'Expressway Free';
+	src: url('http://ff.static.1001fonts.net/e/x/expressway-free.regular.ttf');
+}
+
+* {
+	font-family: 'Expressway Free', sans-serif;
+}
+
+body {
+	padding: 40px 200px;
+}
+
+a {
+	text-decoration: none;
+	color: #D23C22;
+}
+
+a:hover {
+	color: #A7301B;
+}
+
 img {
 	max-width: 100%;
 }
@@ -7,4 +29,29 @@ code {
 	padding: 10px;
 	line-height: 29pt;
 	outline: 1px solid #eaeaea;
+}
+
+.home {
+
+}
+
+.home a {
+	text-decoration: none;
+	color: #D23C22;
+	font-weight: bold;
+	font-size: 2.4em;
+	margin: 0.67em 0;
+}
+
+.meta {
+	color: #D8D8D8;
+	font-size: 10pt;
+}
+
+.meta a {
+	color: #D8D8D8;
+}
+
+.meta a:hover {
+	color: #D23C22;
 }
