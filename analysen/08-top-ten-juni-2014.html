@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Uploads nach Stunde am Tag - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="home"><a href="../index.html">pr0stats - pr0gramm.com Statistiken</a></div>
+
+		<h1>Top 10 Juni 2014</h1>
+
+		<ol class="top10">
+			<li><span class="math"><span class="up">1159</span> - <span class="down">9</span><span class="votes">1150</span></span><span class="image"><a href="http://pr0gramm.com/new/201378"><img src="http://thumb.pr0gramm.com/2014/06/29/feefe837a52a4799.jpg" /></a></span><span class="user">cha0s</span></li>
+			<li><span class="math"><span class="up">739</span> - <span class="down">29</span><span class="votes">710</span></span><span class="image censored">zensiert<br>(id #199118)</span><span class="user">hadrrr</span></li>
+			<li><span class="math"><span class="up">705</span> - <span class="down">30</span><span class="votes">675</span></span><span class="image censored">zensiert<br>(id #197222)</span><span class="user">Magudn</span></li>
+			<li><span class="math"><span class="up">690</span> - <span class="down">20</span><span class="votes">670</span></span><span class="image"><a href="http://pr0gramm.com/new/186248"><img src="http://thumb.pr0gramm.com/2014/06/16/93fab16548cb542b.jpg" /></a></span><span class="user">fag0r</span></li>
+			<li><span class="math"><span class="up">670</span> - <span class="down">22</span><span class="votes">648</span></span><span class="image"><a href="http://pr0gramm.com/new/184571"><img src="http://thumb.pr0gramm.com/2014/06/15/ff90c8802507c54b.jpg" /></a></span><span class="user">DerToni</span></li>
+			<li><span class="math"><span class="up">720</span> - <span class="down">76</span><span class="votes">644</span></span><span class="image"><a href="http://pr0gramm.com/new/183180"><img src="http://thumb.pr0gramm.com/2014/06/13/723aa8064b0e5d6c.jpg" /></a></span><span class="user">Programigger</span></li>
+			<li><span class="math"><span class="up">685</span> - <span class="down">53</span><span class="votes">632</span></span><span class="image"><a href="http://pr0gramm.com/new/193058"><img src="http://thumb.pr0gramm.com/2014/06/22/94d01b3ee39590c5.jpg" /></a></span><span class="user">Guderian</span></li>
+			<li><span class="math"><span class="up">648</span> - <span class="down">18</span><span class="votes">630</span></span><span class="image"><img src="http://thumb.pr0gramm.com/2014/06/23/76d6bf27b5c6b109.jpg" /></span><span class="user">Vertebrat1</span></li>
+			<li><span class="math"><span class="up">693</span> - <span class="down">63</span><span class="votes">630</span></span><span class="image"><a href="http://pr0gramm.com/new/190455"><img src="http://thumb.pr0gramm.com/2014/06/20/8459eb58a4ec261d.jpg" /></a></span><span class="user">DrOralfist</span></li>
+			<li><span class="math"><span class="up">651</span> - <span class="down">38</span><span class="votes">613</span></span><span class="image"><a href="http://pr0gramm.com/new/191652"><img src="http://thumb.pr0gramm.com/2014/06/21/fae3cfe7f9d1072c.jpg" /></a></span><span class="user">pps</span></li>
+		</ol>
+
+		<h2>Hinweise</h2>
+		<ul>
+			<li>Hier angezeigt werden lediglich Bilder, die <code>sfw</code> gettaged wurden, <code>nsfw</code>- und <code>nsfl</code>-Einträge werden hier nicht angezeigt</li>
+			<li>Einträge werden nach eigenem Ermessen zensiert (z.B. wenn sie - in Hinsicht auf Gewaltverherrlichung oder Pornographie - problematisch sind oder sein könnten)</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT `id`, `user`, `thumb`, CAST(`up` AS SIGNED) - CAST(`down` AS SIGNED) AS `result` FROM `pr0stats` WHERE MONTH(FROM_UNIXTIME(`created`)) = '06' AND YEAR(FROM_UNIXTIME(`created`)) = '2014' AND (`tags` NOT LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') ORDER BY `result` DESC LIMIT 0, 10</code></li>
+			<li>Manuelle Datenpflege (siehe Hinweise)</li>
+		</ul>
+	 	
+		<a class="to-top" href="#">top</a>
+	 	
+	 	<!-- JavaScript sources -->
+	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script src="../js/script.js"></script>
+	</body>
+</html>

@@ -32,6 +32,7 @@ code {
 	background-color: #f8f8f8;
 	padding: 10px;
 	outline: 1px solid #eaeaea;
+	max-width: 100%;
 }
 
 .home {
@@ -79,4 +80,69 @@ a.top-top:before {
 .to-top:hover {
 	background-color: #FAFAFA;
 	color: #D23C22;
+}
+
+.top10 {
+	margin-top: 60px;
+	padding-left: 0;
+}
+
+.top10 * {
+	line-height: 2ex;
+}
+
+.top10 li {
+	display: inline-block;
+	width: 128px;
+	vertical-align: top;
+	margin-right: 92px;
+	margin-bottom: 100px;
+}
+
+.top10 .user {
+	display: block;
+	line-height: 2ex;
+	text-align: right;
+	color: #888888;
+	margin-top: 6px;
+}
+
+.top10 .image {
+	display: block;
+}
+
+.top10 .math {
+	text-align: center;
+	font-size: 20pt;
+	display: block;
+	color: #C3C3C3;
+	margin-bottom: 10px;
+}
+
+.top10 .censored {
+	color: #F2F2F2;
+	vertical-align: middle;
+	outline: 1px solid #F8F8F8;
+	height: 48px;
+	width: 128px;
+	line-height: 2ex;
+	padding: 40px 0;
+	text-align: center;
+}
+
+
+.top10 .up {
+	color: #5BB91C;
+}
+
+
+.top10 .down {
+	color: #A7301B;
+}
+
+
+.top10 .votes {
+	font-size: 34pt;
+	color: #888;
+	display: block;
 }
