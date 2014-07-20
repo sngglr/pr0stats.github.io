@@ -7,20 +7,33 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53004741-1', 'auto');
 ga('send', 'pageview');
 
+
+// Image toggle
 $(document).ready(function() {
-	// Eastereggs
-	$('.easteregg').click(function() {
-		alert('Herzlichen Glückwunsch, du hast ein Osterei gefunden!');
-	});
-	
-	// Image toggle
 	$('.image-toggle').hide();
 	$('.image-toggle-button').click(function() {
 		$(this).next('.image-toggle').show();
 		$(this).hide();
-		
 	});
-	$('.easteregg').click(function() {
-		alert('Herzlichen Glückwunsch, du hast ein Osterei gefunden!');
+});
+
+// Thumbnail hover and click raw images
+$(function() {
+	$('.thumbnail').before('<span class="thumbnail-hover-overlay">Klick für Vollbild</span>');
+	
+	$(".thumbnail-hover-overlay").css("opacity", "0");
+
+	// mouse over
+	$(".thumbnail-hover-overlay").hover(function() {
+		$(this).stop().animate({
+			opacity : .85
+		}, "fast");
+	},
+
+	// mouse out
+	function() {
+		$(this).stop().animate({
+			opacity : 0
+		}, "fast");
 	});
 });

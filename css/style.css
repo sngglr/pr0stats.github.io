@@ -65,6 +65,13 @@ code.block {
 	color: #D23C22;
 }
 
+.toc {
+	border: 1px solid #F2F2F2;
+	background-color: #F8F8F8;
+	display: inline-block;
+	padding: 3% 5%;
+}
+
 .to-top {
 	margin-top: 60px;
 	font-size: 1.4ex;
@@ -170,4 +177,26 @@ a.top-top:before {
 	display:inline-block;
 	width:49%;
 	min-width:420px;
+}
+
+.thumbnail {
+	max-width: 420px;
+	max-height: 420px;
+}
+
+.thumbnail-box {
+}
+
+
+.thumbnail-hover-overlay {
+	width: 420px;
+	height: 230px;
+	color: #FFF;
+	background-color: #D23C22;
+	position: absolute;
+	z-index: 99999;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 190px;
+	/*left: -420px;*/
 }
