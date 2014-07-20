@@ -9,6 +9,7 @@
 
 body {
 	padding: 40px 7%;
+	font-size: 4ex;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
 li {
-	line-height: 29pt;
+	line-height: 4ex;
 }
 
 a:hover {
@@ -35,6 +36,10 @@ code {
 	max-width: 100%;
 }
 
+code.block {
+	display: block;
+}
+
 .home {
 
 }
@@ -49,7 +54,7 @@ code {
 
 .meta {
 	color: #D8D8D8;
-	font-size: 10pt;
+	font-size: 2.5ex;
 }
 
 .meta a {
@@ -62,14 +67,13 @@ code {
 
 .to-top {
 	margin-top: 60px;
-	font-size: 10pt;
+	font-size: 1.4ex;
 	color: #D8D8D8;
 	font-weight: bold;
 	border: 1px solid #F6F6F6;
-	padding: 8px 18px 8px 16px;
+	padding: 15px 18px 15px 16px;
 	display: block;
-	border-radius: 10%;
-	width: 20px;
+	max-width: 50px;
 	text-align: center;
 }
 
@@ -128,6 +132,7 @@ a.top-top:before {
 	line-height: 2ex;
 	padding: 40px 0;
 	text-align: center;
+	font-size: 0.5em;
 }
 
 
@@ -158,5 +163,5 @@ a.top-top:before {
 	cursor: pointer;
 	color: #888;
 	margin-bottom: 30px;
-	font-size: 10pt;
+	font-size: 1.5ex;
 }

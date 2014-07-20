@@ -15,14 +15,14 @@
 
 		<h2>Annahmen</h2>
 		<ul>
-			<li>Relaunch war am 03.05.2014 um 14:59 (siehe <a href="https://twitter.com/pr0gramm/status/462577172507795456">Tweet zum Relaunch</a>)</li>
+			<li>Relaunch war am 03.05.2014 um 14:59 (siehe <a target="_blank" href="https://twitter.com/pr0gramm/status/462577172507795456">Tweet zum Relaunch</a>)</li>
 		</ul>
 
 		<h2>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
-			<li><code>SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00'</code></li>
-			<li><code>SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00'</code></li>
+			<li><code class="block">SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00'</code></li>
+			<li><code class="block">SELECT COUNT( * )/COUNT(DISTINCT DATE(FROM_UNIXTIME(`created`))) FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00'</code></li>
 		</ul>
 	 	
 		<a class="to-top" href="#">top</a>

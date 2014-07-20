@@ -21,9 +21,9 @@
 		<h2>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
-			<li><code>SELECT YEAR(FROM_UNIXTIME(created)) AS year, QUARTER(FROM_UNIXTIME(created)) AS quarter, COUNT(*) AS amount FROM `stats` GROUP BY year, quarter ORDER BY year ASC, quarter ASC</code></li>
-			<li><code>SELECT WEEKDAY(FROM_UNIXTIME(`created`)) AS `weekday`, COUNT(*) AS `amount` FROM `stats` GROUP BY `weekday`</code></li>
-			<li><code>SELECT DAY(FROM_UNIXTIME(`created`)) AS `day`, COUNT(*) AS `amount` FROM `stats` GROUP BY `day` ORDER BY `day` ASC</code></li>
+			<li><code class="block">SELECT YEAR(FROM_UNIXTIME(created)) AS year, QUARTER(FROM_UNIXTIME(created)) AS quarter, COUNT(*) AS amount FROM `stats` GROUP BY year, quarter ORDER BY year ASC, quarter ASC</code></li>
+			<li><code class="block">SELECT WEEKDAY(FROM_UNIXTIME(`created`)) AS `weekday`, COUNT(*) AS `amount` FROM `stats` GROUP BY `weekday`</code></li>
+			<li><code class="block">SELECT DAY(FROM_UNIXTIME(`created`)) AS `day`, COUNT(*) AS `amount` FROM `stats` GROUP BY `day` ORDER BY `day` ASC</code></li>
 		</ul>
 	 	
 		<a class="to-top" href="#">top</a>
