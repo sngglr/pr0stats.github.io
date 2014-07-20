@@ -26,7 +26,7 @@
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li><code class="block">SELECT `id`, `up`, `down`, `comments`, (`up` + `down` + `comments`) AS `result`, CONCAT('http://thumb.pr0gramm.com/', `thumb`) AS `src` FROM `pr0stats` WHERE YEAR(FROM_UNIXTIME(`created`)) = '2014' ORDER BY `result` DESC LIMIT 0, 5</code></li>
-			<li>Der Grad der Interaktion wird ermittelt durch Summe aus <code>upvotes</code> + <code>downvotes</code> + <code>comments</code>; die Anzahl der Tags wäre für diese Erhebung ebenfalls interessant, ist jedoch mit [gegebenem Tabellenschema](../methodik.html#tags) umständlich und wird daher ausgelassen</li>
+			<li>Der Grad der Interaktion wird ermittelt durch Summe aus <code>upvotes</code> + <code>downvotes</code> + <code>comments</code>; die Anzahl der Tags wäre für diese Erhebung ebenfalls interessant, ist jedoch mit <a href="../methodik.html#tags">gegebenem Tabellenschema</a> umständlich und wird daher ausgelassen</li>
 		</ul>
 	 	
 		<a class="to-top" href="#">top</a>
