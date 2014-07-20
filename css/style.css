@@ -97,7 +97,7 @@ code.block {
 	text-align: center;
 }
 
-a.top-top:before {
+a.to-top:before {
 	content: '↑ ';
 }
 
@@ -106,15 +106,15 @@ a.top-top:before {
 	color: #D23C22;
 }
 
-.top10 {
+.top-list {
 	padding-left: 0;
 }
 
-.top10 * {
+.top-list * {
 	line-height: 2ex;
 }
 
-.top10 li {
+.top-list li {
 	display: inline-block;
 	width: 128px;
 	vertical-align: top;
@@ -123,7 +123,7 @@ a.top-top:before {
 	margin-bottom: 40px;
 }
 
-.top10 .user {
+.top-list .user {
 	display: block;
 	line-height: 2ex;
 	text-align: right;
@@ -131,11 +131,11 @@ a.top-top:before {
 	margin-top: 6px;
 }
 
-.top10 .image {
+.top-list .image {
 	display: block;
 }
 
-.top10 .math {
+.top-list .math {
 	text-align: center;
 	font-size: 20pt;
 	display: block;
@@ -143,7 +143,12 @@ a.top-top:before {
 	margin-bottom: 10px;
 }
 
-.top10 .censored {
+.top-list .comments {
+	background: url('../img/comment-icon.png') left 3px no-repeat;
+	padding-left: 33px;
+}
+
+.top-list .censored {
 	color: #F2F2F2;
 	vertical-align: middle;
 	outline: 1px solid #F8F8F8;
@@ -156,17 +161,17 @@ a.top-top:before {
 }
 
 
-.top10 .up {
+.top-list .up {
 	color: #5BB91C;
 }
 
 
-.top10 .down {
+.top-list .down {
 	color: #A7301B;
 }
 
 
-.top10 .votes {
+.top-list .votes {
 	font-size: 34pt;
 	color: #888;
 	display: block;
