@@ -165,3 +165,9 @@ a.top-top:before {
 	margin-bottom: 30px;
 	font-size: 1.5ex;
 }
+
+.thumbnail-halfpage {
+	display:inline-block;
+	width:49%;
+	min-width:420px;
+}
