@@ -200,3 +200,23 @@ a.top-top:before {
 	padding-top: 190px;
 	/*left: -420px;*/
 }
+
+.prg-link {
+	display: block;
+	color: #D8D8D8;
+	font-size: 1.5ex;
+	margin: -30px 0 40px;
+}
+
+.prg-link a {
+	color: #D8D8D8;
+	background: url('../img/pr0gramm-icon-15x15-grayed.png') left 16px no-repeat;
+	padding: 10px 0 10px 23px;
+	margin-left: 5px;
+	position: relative;
+}
+
+.prg-link a:hover {
+	background-image: url('../img/pr0gramm-icon-15x15.png');
+	color: #D23C22;
+}
