@@ -1,25 +1,21 @@
 @media (max-width: 768px) {
 	body {
-		background: red;
 		padding: 40px 3%;
 	}
 }
 
 @media (min-width: 768px) {
 	body {
-		background: yellow;
 	}
 }
 
 @media (min-width: 992px) {
 	body {
-		background: blue;
 	}
 }
 
 @media (min-width: 1200px) {
 	body {
-		background: green;
 		padding: 60px 12%;
 	}
 }
