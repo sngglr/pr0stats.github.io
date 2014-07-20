@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Tagcloud erste Julihälfte - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="home"><a href="../index.html">pr0stats - pr0gramm.com Statistiken</a></div>
+
+		<h1>Tagcloud Juli (bereinigt) - Totenkopf 2</h1>
+		<div class="thumbnail-box">
+			<a href="../img/11-tagcloud-juli3.png"><img class="thumbnail" src="../img/thumb/11-tagcloud-juli3-thumb.png" alt="Tagcloud" /></a>
+		</div>
+
+		<a class="image-toggle-button" style="margin-top: 40px;">Interaktive Tagcloud anzeigen</a>
+		<div class="image-toggle" style="width: 100%; height: 100%; padding-bottom: 30px;">
+			<script src="http://cdn.tagul.com/embed/371869@1"></script>
+			<!-- Please don't remove attribution to Tagul.com -->
+			<div style="display: table; margin: 0 auto;"><a href="http://tagul.com/">Created with Tagul.com</a></div>
+		</div>
+
+		<h2>Informationen</h2>
+		<ul>
+			<li>Angezeigt werden die 100 meist genutzten Tags abzüglich <code>nsfw</code>, <code>nsfl</code> und <code>sfw</code></li>
+			<li>Außerdem wurden folgende Tags - quasi Standard-Tags - entfernt, um ein besseres Abbild vom Tag-Geschehen zu erhalten:
+				<code>9fag</code>, 
+				<code>ass</code>, 
+				<code>blond</code>, 
+				<code>com</code>, 
+				<code>dr</code>, 
+				<code>drecksvieh</code>, 
+				<code>fag</code>, 
+				<code>gore</code>, 
+				<code>kadse</code>, 
+				<code>mr</code>, 
+				<code>nsfl</code>, 
+				<code>nsfw</code>, 
+				<code>pr0gramm</code>, 
+				<code>rehpost</code>, 
+				<code>repost</code>, 
+				<code>rn</code>, 
+				<code>sfw</code>, 
+				<code>süßvieh</code>, 
+				<code>tit</code>, 
+				<code>tl</code> und
+				<code>würde</code>.
+			</li>
+			<li>Die Größe eines Tags repräsentiert seine Verwendungshäufigkeit</li>
+			<li>Es wurden alle Einträge von 01.07.2014 bis 19.07.2014 berücksichtigt</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code>SELECT `tags` FROM `pr0stats` WHERE DATE(FROM_UNIXTIME(`created`)) gt;= '2014-07-01' AND `tags` IS NOT NULL;</code></li>
+			<li>Erstellung der Tagcloud mittels <a href="http://tagul.com/">Tagul</a></li>
+		</ul>
+
+		<a class="to-top" href="#">top</a>
+	 	
+	 	<!-- JavaScript sources -->
+	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script src="../js/script.js"></script>
+	</body>
+</html>
