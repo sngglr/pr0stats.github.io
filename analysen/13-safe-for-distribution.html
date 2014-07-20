@@ -26,6 +26,7 @@
 		<h2>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li>Ermittlung der Gesamtzahl per <code>SELECT COUNT(*) FROM `pr0stats`</code></li>
 			<li><code class="block">(SELECT COUNT(*) FROM `pr0stats` WHERE `tags` NOT LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') UNION (SELECT COUNT(*) FROM `pr0stats` WHERE `tags` LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') UNION (SELECT COUNT(*) FROM `pr0stats` WHERE `tags` LIKE '%nsfl%')</code></li>
 			<li>Werte für <code>nsfw</code> und <code>nsfl</code> ergeben sich aus obig ermittelten Daten: <code>nsfw</code> (22%) und <code>nsfl</code> (4%)</li>
 			<li>Als Resultat für <code>sfw</code> wird der explizit ermittelte Wert für <code>sfw</code> (47%) addiert mit dem Wert der unklassifizierten Menge (26%), ergo: <code>sfw</code> = 47% + 26% = 73%</li>
