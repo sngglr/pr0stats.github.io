@@ -144,8 +144,10 @@ a.to-top:before {
 }
 
 .top-list .comments {
-	background: url('../img/comment-icon.png') left 3px no-repeat;
-	padding-left: 33px;
+	background: url('../img/comment-icon.png') 28px 6px no-repeat;
+	display: block;
+	text-align: left;
+	padding-left: 50px;
 }
 
 .top-list .censored {
@@ -160,16 +162,23 @@ a.to-top:before {
 	font-size: 0.5em;
 }
 
-
 .top-list .up {
+	font-size: 14pt;
 	color: #5BB91C;
 }
 
+.top-list .up:before {
+	content: '+';
+}
 
 .top-list .down {
+	font-size: 14pt;
 	color: #A7301B;
 }
 
+.top-list .down:before {
+	content: '-';
+}
 
 .top-list .votes {
 	font-size: 34pt;
