@@ -24,30 +24,7 @@
 
 		<h2>Informationen</h2>
 		<ul>
-			<li>Angezeigt werden die 100 meist genutzten Tags abzüglich <code>nsfw</code>, <code>nsfl</code> und <code>sfw</code></li>
-			<li>Außerdem wurden folgende Tags - quasi Standard-Tags - entfernt, um ein besseres Abbild vom Tag-Geschehen zu erhalten:
-				<code>9fag</code>, 
-				<code>ass</code>, 
-				<code>blond</code>, 
-				<code>com</code>, 
-				<code>dr</code>, 
-				<code>drecksvieh</code>, 
-				<code>fag</code>, 
-				<code>gore</code>, 
-				<code>kadse</code>, 
-				<code>mr</code>, 
-				<code>nsfl</code>, 
-				<code>nsfw</code>, 
-				<code>pr0gramm</code>, 
-				<code>rehpost</code>, 
-				<code>repost</code>, 
-				<code>rn</code>, 
-				<code>sfw</code>, 
-				<code>süßvieh</code>, 
-				<code>tit</code>, 
-				<code>tl</code> und
-				<code>würde</code>
-			</li>
+			<li>Angezeigt werden meist genutzten Tags abzüglich <code>nsfw</code>, <code>nsfl</code> und <code>sfw</code></li>
 			<li>Die Größe eines Tags repräsentiert seine Verwendungshäufigkeit</li>
 			<li>Es wurden alle Einträge von 01.07.2014 bis 19.07.2014 berücksichtigt</li>
 		</ul>
@@ -55,7 +32,7 @@
 		<h2>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
-			<li><code>SELECT `tags` FROM `pr0stats` WHERE DATE(FROM_UNIXTIME(`created`)) gt;= '2014-07-01' AND `tags` IS NOT NULL</code></li>
+			<li><code>SELECT `tags` FROM `pr0stats` WHERE `tags` IS NOT NULL</code></li>
 			<li>Erstellung der Tagcloud mittels <a href="http://tagul.com/">Tagul</a></li>
 		</ul>
 
