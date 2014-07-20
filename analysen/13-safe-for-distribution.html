@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	    <meta charset="utf-8">
+		<title>Distribution der sf-Attribute - pr0stats - pr0gramm.com Statistiken</title>
+	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+	    <link href="../css/style.css" rel="stylesheet" type="text/css">
+	    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="home"><a href="../index.html">pr0stats - pr0gramm.com Statistiken</a></div>
+
+		<h1>Distribution der sf-Attribute</h1>
+		<span class="prg-link-box">auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats/uploads/227844">pr0gramm</a></span>
+		<a href="../img/13-safe-for-distribution.png"><img src="../img/13-safe-for-distribution.png" alt="Distribution der sf-Attribute" /></a>
+
+		<h2>Konkrete Resultate</h2>
+		<ul>
+			<li>Gesamt 203203 Einträge</li>
+			<li>Davon 95529 Reposts (47%) ohne <code>nsfw</code> oder <code>nsfl</code> Tag (ergo <code>sfw</code>)</li>
+			<li>45556 Einträge (22%) sind mit <code>nsfw</code> aber nicht <code>nsfl</code> getagged (ergo <code>nsfw</code>)</li>
+			<li>Und 9124 Einträge (4%) getagged mit <code>nsfl</code></li>
+			<li>Für 52994 Einträge (26%) konnte nach diesem Schema kein safe for-Attribut ermittelt werden</li>
+		</ul>
+
+		<h2>Methodik</h2>
+		<ul>
+			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li><code class="block">(SELECT COUNT(*) FROM `pr0stats` WHERE `tags` NOT LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') UNION (SELECT COUNT(*) FROM `pr0stats` WHERE `tags` LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') UNION (SELECT COUNT(*) FROM `pr0stats` WHERE `tags` LIKE '%nsfl%')</code></li>
+			<li>Werte für <code>nsfw</code> und <code>nsfl</code> ergeben sich aus obig ermittelten Daten: <code>nsfw</code> (22%) und <code>nsfl</code> (4%)</li>
+			<li>Als Resultat für <code>sfw</code> wird der explizit ermittelte Wert für <code>sfw</code> (47%) addiert mit dem Wert der unklassifizierten Menge (26%), ergo: <code>sfw</code> = 47% + 26% = 73%</li>
+		</ul>
+	 	
+		<a class="to-top" href="#">top</a>
+
+	 	<!-- JavaScript sources -->
+	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script src="../js/script.js"></script>
+	</body>
+</html>
