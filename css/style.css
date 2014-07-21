@@ -278,3 +278,7 @@ code.block {
 .bitcoin-donate {
 	color: white;
 }
+
+.bitcoin-donate .stage-begin {
+	margin: 0 auto;
+}
