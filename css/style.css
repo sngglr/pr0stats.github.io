@@ -145,9 +145,21 @@ code.block {
 	display: inline-block;
 	width: 128px;
 	vertical-align: top;
-	margin-right: 92px;
+	margin-right: 32px;
 	margin-top: 60px;
 	margin-bottom: 40px;
+	border: 2px solid #F8F8F8;
+	padding: 20px 30px;
+	overflow: hidden;
+}
+
+.top-list h2 {
+	margin: 0 0 20px;
+	text-align: center;
+	font-size: 5ex;
+}
+
+.top-list h2:after {
 }
 
 .top-list .user {
@@ -156,6 +168,7 @@ code.block {
 	text-align: right;
 	color: #888888;
 	margin-top: 6px;
+	font-size: 1ex;
 }
 
 .top-list .image {
