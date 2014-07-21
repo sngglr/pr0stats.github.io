@@ -30,11 +30,39 @@
 			<li>Werte für <code>nsfw</code> und <code>nsfl</code> ergeben sich aus obig ermittelten Daten: <code>nsfw</code> (22%) und <code>nsfl</code> (4%)</li>
 			<li>Als Resultat für <code>sfw</code> wird der explizit ermittelte Wert für <code>sfw</code> (47%) addiert mit dem Wert der unklassifizierten Menge (26%), ergo: <code>sfw</code> = 47% + 26% = 73%</li>
 		</ul>
-	 	
-		<a class="to-top" href="#">top</a>
+		
+		<footer>
+			<div class="left-box"><a href="#">top</a></div>
+			<div class="bitcoin-donate center-box">
+				<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+					data-address="1BmMRemMJ2mWS6Ppo92V2qEPxnWmH98vAe"
+					data-shared="false">
+					<div class="blockchain stage-begin">
+						<img class="bitcoin-logo" src="../img/we-love-bitcoins.png"/>
+					</div>
+					<div class="blockchain stage-loading" style="text-align:center">
+						<img src="https://blockchain.info//Resources/loading-large.gif"/>
+					</div>
+					<div class="blockchain stage-ready">
+						<p align="center">
+							Please Donate To Bitcoin Address: <b>[[address]]</b>
+						</p>
+						<p align="center" class="qr-code"></p>
+					</div>
+					<div class="blockchain stage-paid">
+						Donation of <b>[[value]] BTC</b> Received. Thank You.
+					</div>
+					<div class="blockchain stage-error">
+						<font color="red">[[error]]</font>
+					</div>
+				</div>
+			</div>
+			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+		</footer>
 
 	 	<!-- JavaScript sources -->
 	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
 	    <script src="../js/script.js"></script>
 	</body>
 </html>

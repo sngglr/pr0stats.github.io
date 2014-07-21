@@ -28,11 +28,39 @@
 			<li><code class="block">SELECT `id`, `up`, `down`, `comments`, (`up` + `down` + `comments`) AS `result`, CONCAT('http://thumb.pr0gramm.com/', `thumb`) AS `src` FROM `pr0stats` WHERE YEAR(FROM_UNIXTIME(`created`)) = '2014' ORDER BY `result` DESC LIMIT 0, 5</code></li>
 			<li>Der Grad der Interaktion wird ermittelt durch Summe aus <code>upvotes</code> + <code>downvotes</code> + <code>comments</code>; die Anzahl der Tags wäre für diese Erhebung ebenfalls interessant, ist jedoch mit <a href="../methodik.html#tags">gegebenem Tabellenschema</a> umständlich und wird daher ausgelassen</li>
 		</ul>
-	 	
-		<a class="to-top" href="#">top</a>
+		
+		<footer>
+			<div class="left-box"><a href="#">top</a></div>
+			<div class="bitcoin-donate center-box">
+				<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+					data-address="1BmMRemMJ2mWS6Ppo92V2qEPxnWmH98vAe"
+					data-shared="false">
+					<div class="blockchain stage-begin">
+						<img class="bitcoin-logo" src="../img/we-love-bitcoins.png"/>
+					</div>
+					<div class="blockchain stage-loading" style="text-align:center">
+						<img src="https://blockchain.info//Resources/loading-large.gif"/>
+					</div>
+					<div class="blockchain stage-ready">
+						<p align="center">
+							Please Donate To Bitcoin Address: <b>[[address]]</b>
+						</p>
+						<p align="center" class="qr-code"></p>
+					</div>
+					<div class="blockchain stage-paid">
+						Donation of <b>[[value]] BTC</b> Received. Thank You.
+					</div>
+					<div class="blockchain stage-error">
+						<font color="red">[[error]]</font>
+					</div>
+				</div>
+			</div>
+			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+		</footer>
 
 	 	<!-- JavaScript sources -->
 	    <script src="../js/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
 	    <script src="../js/script.js"></script>
 	</body>
 </html>

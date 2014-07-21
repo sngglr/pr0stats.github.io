@@ -12,6 +12,54 @@ body {
 	font-size: 4ex;
 }
 
+footer {
+	background-color: #222;
+	position: absolute;
+	display: block;
+	width: 96%;
+	margin: 80px -7% 0;
+	padding: 2%;
+	vertical-align: middle;
+}
+
+footer .left-box, footer .center-box, footer .right-box {
+	display: block;
+	font-size: 1.3ex;
+}
+
+footer a {
+	color: #D8D8D8;
+}
+
+footer a:hover {
+	color: #D23C22;
+}
+
+/*footer > div:last-child {
+	width: 50%;
+	margin-right: 0;
+}*/
+
+footer .left-box {
+	text-align: left;
+}
+
+footer .center-box {
+	text-align: center;
+}
+
+footer .stage-begin {
+	background-color: white;
+	height: 60px;
+	width: 60px;
+	padding: 15px;
+	border-radius: 50%;
+}
+
+footer .right-box {
+	text-align: right;
+}
+
 a {
 	text-decoration: none;
 	color: #D23C22;
@@ -83,27 +131,6 @@ code.block {
 .toc li a:hover {
 	border: 1px solid #F2F2F2;
 	background-color: #F8F8F8;
-}
-
-.to-top {
-	margin-top: 60px;
-	font-size: 1.4ex;
-	color: #D8D8D8;
-	font-weight: bold;
-	border: 1px solid #F6F6F6;
-	padding: 15px 18px 15px 16px;
-	display: block;
-	max-width: 50px;
-	text-align: center;
-}
-
-a.to-top:before {
-	content: '↑ ';
-}
-
-.to-top:hover {
-	background-color: #FAFAFA;
-	color: #D23C22;
 }
 
 .top-list {
@@ -246,4 +273,8 @@ a.to-top:before {
 .prg-link:hover {
 	background-image: url('../img/pr0gramm-icon-15x15.png');
 	color: #D23C22;
+}
+
+.bitcoin-donate {
+	color: white;
 }

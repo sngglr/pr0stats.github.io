@@ -11,14 +11,13 @@
 		<div class="home"><a href="index.html">pr0stats - pr0gramm.com Statistiken</a></div>
 
 		<h1>Motivation</h1>
-		<p>Als großer Freund von faktischen Datensammlungen, sinnvollen Verknüpfungen und ästhetischen Visualisierungen habe ich das Projekt pr0stats gestartet. Ziel war die Datengewinnung von der <a href="http://pr0gramm.com">pr0gramm Plattform</a> und entsprechende Verarbeitung und Visualisierung der Daten und Berechnungen.</p>
+		<p>Als großer Freund von faktischen Datensammlungen, sinnvollen Verknüpfungen und ästhetischen Visualisierungen haben wir das Projekt <strong>pr0stats</strong> gestartet. Ziel ist die Datengewinnung von der <a href="http://pr0gramm.com">pr0gramm Plattform</a> und entsprechende Verarbeitung, Auswertung und Visualisierung der Ergebnisse.</p>
 		<p>pr0stats ist als digital-kontemporäres Kunstprojekt zu verstehen.</p>
-		<p style="margin-top:60px">Außerdem könnten sich das <a href="https://github.com/pr0stats/pr0stats">pr0stats Script</a> und die hier gewonnen Daten für weiterführende und intensivere Untersuchungen, z.B. wissenschaftliche Studien, eignen. Das Projekt unterliegt <a href="http://unlicense.org/">einer Unlizenz</a>. Wir freuen uns bei Verwendung der Daten um Verlinkung:</p>
-		<code>&lt;a href="http://pr0stats.github.io/pr0stats/"&gt;pr0stats&lt;/a&gt;</code>
-		<p style="margin-top:60px; font-style:italic">pr0stats steht nicht in persönlicher oder wirtschaftlicher Verbindung den Betreibern von pr0gramm oder dem Webportal pr0gramm.com. Das Projektteam von pr0stats wurde weder von pr0gramm beauftragt, noch authorisiert, die Analysen und - insbesondere - die Datenbeschaffung durchzuführen.</p>
+		<p style="margin-top:60px">Außerdem könnte sich die Datenbasis sowie die Analysen für weiterführende und intensivere Untersuchungen, z.B. wissenschaftliche Studien (Kulturwissenschaften, Kommunikationswissenschaften, Soziologie, Philosophie), eignen. Das Projekt unterliegt <a href="http://unlicense.org/">der Unlizenz</a>.</p>
+		<p style="margin-top:60px; font-style:italic">pr0stats steht weder in persönlicher noch in wirtschaftlicher Verbindung mit den Eigentümern oder Betreibern von pr0gramm.com. Das pr0stats-Team wurde weder von pr0gramm beauftragt, noch authorisiert, die Datenbeschaffung und Analysen durchzuführen.</p>
 		
 		<h1>Methodik</h1>
-		<p>Mit dem pr0stats script (<a href="https://github.com/pr0stats/pr0stats">github</a>) werden zunächst Informationen zu Uploads über die pr0gramm.com API abgerufen. Diese Daten werden dann mittels SQL Queries und manueller Aufarbeitung sowie anschließender Visualisierung in wohl konsumierbare Bilder transformiert. Weitere Informationen finden sich <a href="https://github.com/pr0stats/pr0stats/blob/master/README.md">in der README des Repositories</a>.</p>
+		<p>Mit dem pr0stats script werden zunächst Informationen zu Uploads über die pr0gramm.com API abgerufen. Diese Daten werden dann mittels SQL Queries und manueller Aufarbeitung sowie anschließender Visualisierung in wohl konsumierbare Bilder transformiert.</p>
 		<img src="img/pr0stats-methodik-1.png" />
 		
 		<ol>
@@ -46,10 +45,38 @@
 			<li><code>comments</code> - Anzahl der Kommentare</li>
 		</ul>
 		
-		<a class="to-top" href="#">top</a>
+		<footer>
+			<div class="left-box"><a href="#">top</a></div>
+			<div class="bitcoin-donate center-box">
+				<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+					data-address="1BmMRemMJ2mWS6Ppo92V2qEPxnWmH98vAe"
+					data-shared="false">
+					<div class="blockchain stage-begin">
+						<img class="bitcoin-logo" src="img/we-love-bitcoins.png"/>
+					</div>
+					<div class="blockchain stage-loading" style="text-align:center">
+						<img src="https://blockchain.info//Resources/loading-large.gif"/>
+					</div>
+					<div class="blockchain stage-ready">
+						<p align="center">
+							Please Donate To Bitcoin Address: <b>[[address]]</b>
+						</p>
+						<p align="center" class="qr-code"></p>
+					</div>
+					<div class="blockchain stage-paid">
+						Donation of <b>[[value]] BTC</b> Received. Thank You.
+					</div>
+					<div class="blockchain stage-error">
+						<font color="red">[[error]]</font>
+					</div>
+				</div>
+			</div>
+			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+		</footer>
 
 	 	<!-- JavaScript sources -->
 	    <script src="js/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
 	    <script src="js/script.js"></script>
 	</body>
 </html>
