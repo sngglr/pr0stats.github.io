@@ -21,19 +21,19 @@
 		<span class="prg-link-box">auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats/uploads/227844">pr0gramm</a></span>
 		<a href="../img/06-anteil-reposts.png"><img src="../img/06-anteil-reposts.png" alt="Anteil Reposts (2007 bis 07/2014)" /></a>
 
-		<h2>Resultate</h2>
+		<h2 id="resultate"><a class="headerlink" href="#resultate" title="Permalink zu diesem Abschnitt">¶</a>Resultate</h2>
 		<ul>
 			<li>200842 Einträge</li>
 			<li>Davon 16360 Reposts (Definition siehe Annahmen)</li>
 			<li>Ergibt einen Repost-Quotienten von 0,081457066 bzw. einen Prozentsatz von 8,145706575%</li>
 		</ul>
 
-		<h2>Annahmen</h2>
+		<h2 id="annahmen"><a class="headerlink" href="#annahmen" title="Permalink zu diesem Abschnitt">¶</a>Annahmen</h2>
 		<ul>
 			<li>Repost im Sinne dieser Analyse ist jeder Upload, bei dem ein Tag <code>*repost*</code> enthält (also z.B. <code>repost</code>, <code>repostception</code> oder <code>nicht schon wieder ein repost</code>)</li>
 		</ul>
 
-		<h2>Methodik</h2>
+		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li><code class="block">SELECT (SUM(IF(`tags` LIKE '%repost%’, 1, 0)) * 100)/COUNT(*) FROM `stats`</code></li>
@@ -65,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+			<div class="right-box"><a href="../LICENSE">unlizensiert</a></div>
 		</footer>
 
 	 	<!-- JavaScript sources -->

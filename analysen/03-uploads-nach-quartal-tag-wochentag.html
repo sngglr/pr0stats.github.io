@@ -21,12 +21,12 @@
 		<span class="prg-link-box">auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats/uploads/222829">pr0gramm</a></span>
 		<a href="../img/03-uploads-nach-quartal-tag-wochentag.png"><img src="../img/03-uploads-nach-quartal-tag-wochentag.png" alt="Uploads nach Quartal, Tag im Monat, Wochentag (2007 bis 07/2014)" /></a>
 
-		<h2>Annahmen</h2>
+		<h2 id="annahmen"><a class="headerlink" href="#annahmen" title="Permalink zu diesem Abschnitt">¶</a>Annahmen</h2>
 		<ul>
 			<li>Erhebungszeitraum 23.01.2007 bis 15.07.2014</li>
 		</ul>
 
-		<h2>Methodik</h2>
+		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li><code class="block">SELECT YEAR(FROM_UNIXTIME(created)) AS year, QUARTER(FROM_UNIXTIME(created)) AS quarter, COUNT(*) AS amount FROM `stats` GROUP BY year, quarter ORDER BY year ASC, quarter ASC</code></li>
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+			<div class="right-box"><a href="../LICENSE">unlizensiert</a></div>
 		</footer>
 
 	 	<!-- JavaScript sources -->

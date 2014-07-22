@@ -21,13 +21,13 @@
 		<span class="prg-link-box">auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats/uploads/220091">pr0gramm</a></span>
 		<a href="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png"><img src="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png" alt="Altschwuchteln vs. Neuschwuchteln - Top Uploader (2007 bis 06/2014)" /></a>
 
-		<h2>Annahmen</h2>
+		<h2 id="annahmen"><a class="headerlink" href="#annahmen" title="Permalink zu diesem Abschnitt">¶</a>Annahmen</h2>
 		<ul>
 			<li>Uploads von user <code>anonymous</code> waren nicht user-spezifische Uploads (z.B. aus IRC) und wurden deshalb nicht berücksichtigt</li>
 			<li>Relaunch war am 03.05.2014 um 14:59 (siehe <a href="https://twitter.com/pr0gramm/status/462577172507795456" target="_blank">Tweet zum Relaunch</a>)</li>
 		</ul>
 
-		<h2>Methodik</h2>
+		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li><code class="block">SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+			<div class="right-box"><a href="../LICENSE">unlizensiert</a></div>
 		</footer>
 
 	 	<!-- JavaScript sources -->

@@ -41,7 +41,7 @@
 			<li>Einträge werden nach eigenem Ermessen zensiert (z.B. wenn sie - in Hinsicht auf Gewaltverherrlichung oder Pornographie - problematisch sind oder sein könnten)</li>
 		</ul>
 
-		<h2>Methodik</h2>
+		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li><code class="block">SELECT `id`, `user`, `thumb`, CAST(`up` AS SIGNED) - CAST(`down` AS SIGNED) AS `result` FROM `pr0stats` WHERE MONTH(FROM_UNIXTIME(`created`)) = '06' AND YEAR(FROM_UNIXTIME(`created`)) = '2014' AND (`tags` NOT LIKE '%nsfw%' AND `tags` NOT LIKE '%nsfl%') ORDER BY `result` DESC LIMIT 0, 10</code></li>
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right-box"><a href="LICENSE">The Unlicense</a></div>
+			<div class="right-box"><a href="../LICENSE">unlizensiert</a></div>
 		</footer>
 
 	 	<!-- JavaScript sources -->
