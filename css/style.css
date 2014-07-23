@@ -308,3 +308,9 @@ font-weight: normal;
 .headerlink:hover {
 color: #D23C22;
 }
+
+.date-entry {
+	color: #C3C3C3;
+	font-size: 1.2ex;
+	margin-right: 12px;
+}
