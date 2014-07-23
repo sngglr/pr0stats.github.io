@@ -116,6 +116,7 @@ code.block {
 .toc {
 	display: block;
 	padding: 0;
+	margin-bottom: 60px;
 }
 
 .toc li {
@@ -124,13 +125,12 @@ code.block {
 }
 
 .toc li a {
-	border: 1px solid #FCFCFC;
 	padding: 10px 30px;
 }
 
 .toc li a:hover {
-	border: 1px solid #F2F2F2;
-	background-color: #F8F8F8;
+	color: #FFFFFF;
+	background-color: #D23C22;
 }
 
 .top-list {
