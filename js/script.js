@@ -7,18 +7,26 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53004741-1', 'auto');
 ga('send', 'pageview');
 
-
-// Image toggle
 $(document).ready(function() {
+	// Image toggle (show large image on click)
 	$('.image-toggle').hide();
 	$('.image-toggle-button').click(function() {
 		$(this).next('.image-toggle').show();
 		$(this).hide();
 	});
-});
 
-// Thumbnail hover and click raw images
+	// Hide all submenu items that don't have corresponding h2 Headlines
+	$('.toc li').hide();
+	$('.toc li').each(function() {
+		var href = $(this).find('a').attr('href');
+		if ($("h2"+href).length > 0){
+			$(this).show();
+		}
+	});
+}); 
+
 $(function() {
+	// Thumbnail hover and click raw images
 	$('.thumbnail').before('<span class="thumbnail-hover-overlay">Klick für Vollbild</span>');
 	
 	$(".thumbnail-hover-overlay").css("opacity", "0");
