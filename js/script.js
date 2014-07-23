@@ -23,6 +23,58 @@ $(document).ready(function() {
 			$(this).show();
 		}
 	});
+	
+	// Left and right arrow navigation
+	if(document.URL.indexOf("/analysen/") > -1) {
+		var pages = Array(
+			'index.html',
+			'01-tagcloud.html',
+			'02-altschwuchteln-vs-neuschwuchteln-top-uploader.html',
+			'03-uploads-nach-quartal-tag-wochentag.html',
+			'04-dateitypen.html',
+			'05-uploads-pro-tag.html',
+			'06-anteil-reposts.html',
+			'07-uploads-nach-stunde.html',
+			'08-top-ten-juni-2014.html',
+			'09-tagcloud-juli1.html',
+			'10-tagcloud-juli2.html',
+			'11-tagcloud-juli3.html',
+			'12-tagcloud-juli4.html',
+			'13-safe-for-distribution.html',
+			'14-top-five-engaging-uploads.html',
+			'15-tagcloud-wuerde.html',
+			'16-tagcloud-juni-2014.html'
+		);
+		var currentfile = document.location.pathname.match(/[^\/]+$/)[0];
+		var currentkey  = jQuery.inArray(currentfile, pages);
+		var prev = currentkey - 1;
+		var next = currentkey + 1;
+
+		if(prev < 0) {
+			prev = false;
+		} else {
+			prev = pages[prev];
+		}
+
+		console.log(next + ' | ' + pages.length);
+		if(next > pages.length-1) {
+			next = false;
+		} else {
+			next = pages[next];
+		}
+		console.log(next + ' | ' + pages.length);
+		
+		console.log('prev='+prev+', next=' + next);
+		
+		$("body").keydown(function(e) {
+			if (e.keyCode == 37 && prev !== false) {// left
+				window.location.href = prev;
+			} else if (e.keyCode == 39 && next !== false) {// right
+				window.location.href = next;
+			}
+		});
+	}
+
 }); 
 
 $(function() {
