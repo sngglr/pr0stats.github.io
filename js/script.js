@@ -95,6 +95,7 @@ $(document).ready(function() {
 		}
 		
 		// Keynav by left and right button
+		// Key up redirects to index
 		$("body").keydown(function(e) {
 			if (e.keyCode == 37 && prev !== false) {// left
 				$("#keynav-left.keynav").addClass("activate");
@@ -102,14 +103,9 @@ $(document).ready(function() {
 			} else if (e.keyCode == 39 && next !== false) {// right
 				$("#keynav-right.keynav").addClass("activate");
 				window.location.href = next;
-			}
-		});
-		
-		// Key up redirects to index
-		$("body").keyup(function() {
-			if(currentfile !== index) {
+			} else if(e.keyCode == 38 && currentfile !== index) {
 				window.location.href = index;
-			}
+			}			
 		});
 		
 		// Keynav by clicking the left or right arrow
