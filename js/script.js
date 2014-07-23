@@ -103,9 +103,11 @@ $(document).ready(function() {
 			} else if (e.keyCode == 39 && next !== false) {// right
 				$("#keynav-right.keynav").addClass("activate");
 				window.location.href = next;
-			} else if(e.keyCode == 38 && currentfile !== index) {
+			} else if(e.keyCode == 38 && currentfile !== index) { // up
 				window.location.href = index;
-			}			
+			} else if(e.keyCode == 40) { // down
+				window.location.href = 'http://pr0gramm.com/user/pr0stats';
+			}
 		});
 		
 		// Keynav by clicking the left or right arrow
@@ -125,6 +127,13 @@ $(document).ready(function() {
 			// }
 		// }
 	}
+
+	// Key down redirects to user profile on pr0gramm
+	$("body").keydown(function(e) {
+		if(e.keyCode == 40) { // down
+			window.location.href = 'http://pr0gramm.com/user/pr0stats';
+		}
+	});
 
 }); 
 
