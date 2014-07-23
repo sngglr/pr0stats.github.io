@@ -68,15 +68,14 @@ $(document).ready(function() {
 			'14-top-five-engaging-uploads.html',
 			'15-tagcloud-wuerde.html'
 		);
+		var index = pages[0];
 		var currenturl = document.location.pathname;
-		console.log('currenturl'+currenturl);
 		var match = currenturl.match(/[^\/]+$/);
 		if(match !== null) {
 			currentfile = match[0];
 		} else {
-			currentfile = pages[0];
+			currentfile = index;
 		}
-		console.log('currentfile'+currentfile);
 		var currentkey  = jQuery.inArray(currentfile, pages);
 		var prev = currentkey - 1;
 		var next = currentkey + 1;
@@ -103,6 +102,13 @@ $(document).ready(function() {
 			} else if (e.keyCode == 39 && next !== false) {// right
 				$("#keynav-right.keynav").addClass("activate");
 				window.location.href = next;
+			}
+		});
+		
+		// Key up redirects to index
+		$("body").keyup(function() {
+			if(currentfile !== index) {
+				window.location.href = index;
 			}
 		});
 		
