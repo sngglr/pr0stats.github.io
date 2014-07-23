@@ -297,16 +297,16 @@ code.block {
 }
 
 .headerlink {
-color: #d9d9d9;
-margin: 0;
-margin-left: -22px;
-margin-right: 6px;
-font-size: 20pt;
-font-weight: normal;
+	color: #d9d9d9;
+	margin: 0;
+	margin-left: -27px;
+	margin-right: 11px;
+	font-size: 20pt;
+	font-weight: normal;
 }
 
 .headerlink:hover {
-color: #D23C22;
+	color: #D23C22;
 }
 
 .date-entry {
