@@ -7,7 +7,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-53004741-1', 'auto');
 ga('send', 'pageview');
 
-$(document).ready(function() {	
+$(document).ready(function() {
 	// Image toggle (show large image on click)
 	$('.image-toggle').hide();
 	$('.image-toggle-button').click(function() {
