@@ -49,62 +49,70 @@ $(document).ready(function() {
 
 	
 	// Left and right arrow navigation
-	// if(document.URL.indexOf("/analysen/") > -1) {
-		// var pages = Array(
-			// 'index.html',
-			// '01-tagcloud.html',
-			// '02-altschwuchteln-vs-neuschwuchteln-top-uploader.html',
-			// '03-uploads-nach-quartal-tag-wochentag.html',
-			// '04-dateitypen.html',
-			// '05-uploads-pro-tag.html',
-			// '06-anteil-reposts.html',
-			// '07-uploads-nach-stunde.html',
-			// '08-top-ten-juni-2014.html',
-			// '09-tagcloud-juli1.html',
-			// '10-tagcloud-juli2.html',
-			// '11-tagcloud-juli3.html',
-			// '12-tagcloud-juli4.html',
-			// '13-safe-for-distribution.html',
-			// '14-top-five-engaging-uploads.html',
-			// '15-tagcloud-wuerde.html'
-		// );
-		// var currentfile = document.location.pathname.match(/[^\/]+$/)[0];
-		// var currentkey  = jQuery.inArray(currentfile, pages);
-		// var prev = currentkey - 1;
-		// var next = currentkey + 1;
-		// 
-		// if(prev < 0) {
-			// prev = false;
-		// } else {
-			// prev = pages[prev];
-			// $('body').append('<div id="keynav-left" class="keynav">◄</div>');
-		// }
-		// 
-		// if(next > pages.length-1) {
-			// next = false;
-		// } else {
-			// next = pages[next];
-			// $('body').append('<div id="keynav-right" class="keynav">►</div>');
-		// }
+	if(document.URL.indexOf("/analysen/") > -1) {
+		var pages = Array(
+			'index.html',
+			'01-tagcloud.html',
+			'02-altschwuchteln-vs-neuschwuchteln-top-uploader.html',
+			'03-uploads-nach-quartal-tag-wochentag.html',
+			'04-dateitypen.html',
+			'05-uploads-pro-tag.html',
+			'06-anteil-reposts.html',
+			'07-uploads-nach-stunde.html',
+			'08-top-ten-juni-2014.html',
+			'09-tagcloud-juli1.html',
+			'10-tagcloud-juli2.html',
+			'11-tagcloud-juli3.html',
+			'12-tagcloud-juli4.html',
+			'13-safe-for-distribution.html',
+			'14-top-five-engaging-uploads.html',
+			'15-tagcloud-wuerde.html'
+		);
+		var currenturl = document.location.pathname;
+		console.log('currenturl'+currenturl);
+		var match = currenturl.match(/[^\/]+$/);
+		if(match !== null) {
+			currentfile = match[0];
+		} else {
+			currentfile = pages[0];
+		}
+		console.log('currentfile'+currentfile);
+		var currentkey  = jQuery.inArray(currentfile, pages);
+		var prev = currentkey - 1;
+		var next = currentkey + 1;
+		
+		if(prev < 0) {
+			prev = false;
+		} else {
+			prev = pages[prev];
+			$('body').append('<div id="keynav-left" class="keynav">◄</div>');
+		}
+		
+		if(next > pages.length-1) {
+			next = false;
+		} else {
+			next = pages[next];
+			$('body').append('<div id="keynav-right" class="keynav">►</div>');
+		}
 		
 		// Keynav by left and right button
-		// $("body").keydown(function(e) {
-			// if (e.keyCode == 37 && prev !== false) {// left
-				// $("#keynav-left.keynav").addClass("activate");
-				// window.location.href = prev;
-			// } else if (e.keyCode == 39 && next !== false) {// right
-				// $("#keynav-right.keynav").addClass("activate");
-				// window.location.href = next;
-			// }
-		// });
+		$("body").keydown(function(e) {
+			if (e.keyCode == 37 && prev !== false) {// left
+				$("#keynav-left.keynav").addClass("activate");
+				window.location.href = prev;
+			} else if (e.keyCode == 39 && next !== false) {// right
+				$("#keynav-right.keynav").addClass("activate");
+				window.location.href = next;
+			}
+		});
 		
 		// Keynav by clicking the left or right arrow
-		// $("#keynav-left").click(function() {
-			// window.location.href = prev;
-		// });
-		// $("#keynav-right").click(function() {
-			// window.location.href = next;
-		// });
+		$("#keynav-left").click(function() {
+			window.location.href = prev;
+		});
+		$("#keynav-right").click(function() {
+			window.location.href = next;
+		});
 
 		// Keynav for touch devies
 		// $("body").on("swipeleft", swipeHandler("left"));
@@ -114,7 +122,7 @@ $(document).ready(function() {
 				// window.location.href = side;
 			// }
 		// }
-	// }
+	}
 
 }); 
 
