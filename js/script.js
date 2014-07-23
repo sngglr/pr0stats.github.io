@@ -26,23 +26,34 @@ $(document).ready(function() {
 
 	// Table of contents for analysen archive
 	if($('body').hasClass('archive')) {
-		var toc = $('body.archive .toc');
-
-		// Add years to primary subnav
-		$('body.archive h1').each(function() {
-			var href = $(this).find('a').attr('href');
-			var name = $(this).text().substr(1);
-			toc.append('<li><a href="'+href+'">'+name+'</a></li>');
-		});
-		
-		// Add month to year subnav
-		$('body.archive h2').each(function() {
-			var parent = $(this).prev('h1');
-			parent.after('<ul class="toc"></ul>');
-			var href = $(this).find('a').attr('href');
-			var name = $(this).text().substr(1);
-			parent.next('.toc').append('<li><a href="'+href+'">'+name+'</a></li>');
-		});
+		if ($("h1").length > 0){
+			$('body.archive h1').first().before('<ul class="toc"></ul>');
+			var toc = $('body.archive .toc');
+			
+			// Add years to primary subnav
+			$('body.archive h1').each(function() {
+				var href = $(this).find('a').attr('href');
+				var name = $(this).text().substr(1);
+				toc.append('<li><a href="'+href+'">'+name+'</a></li>');
+			});
+			
+			// Add month to year subnav
+			$('body.archive h2').each(function() {
+				var parent = $(this).prev('h1');
+				parent.after('<ul class="toc"></ul>');
+				var href = $(this).find('a').attr('href');
+				var name = $(this).text().substr(1);
+				parent.next('.toc').append('<li><a href="'+href+'">'+name+'</a></li>');
+			});
+		} else {
+			// Add month to year subnav
+			$('body.archive h2').first().before('<ul class="toc"></ul>');
+			$('body.archive h2').each(function() {
+				var href = $(this).find('a').attr('href');
+				var name = $(this).text().substr(1);
+				$('.toc').append('<li><a href="'+href+'">'+name+'</a></li>');
+			});
+		}
 	}
 
 	

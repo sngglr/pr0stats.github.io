@@ -19,7 +19,7 @@ $(document).ready(function() {
 					'data-address="1BmMRemMJ2mWS6Ppo92V2qEPxnWmH98vAe"' +
 					'data-shared="false">' +
 					'<div class="blockchain stage-begin">' +
-						'<img class="bitcoin-logo" src="img/we-love-bitcoins.png"/>' +
+						'<img class="bitcoin-logo" src="/img/we-love-bitcoins.png"/>' +
 					'</div>' +
 					'<div class="blockchain stage-loading" style="text-align:center">' +
 						'<img src="https://blockchain.info//Resources/loading-large.gif"/>' +
