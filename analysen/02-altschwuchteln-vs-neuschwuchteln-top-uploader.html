@@ -2,7 +2,7 @@
 <html lang="de">
 	<head>
 	    <meta charset="utf-8">
-		<title>Altschwuchteln vs. Neuschwuchteln - Top Uploader (2007 bis 06/2014) - pr0stats - pr0gramm.com Statistiken</title>
+		<title>Altschwuchteln vs. Neuschwuchteln - Top Uploader (01/2007 bis 07/2014) - pr0stats - pr0gramm.com Statistiken</title>
 	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
 	    <link href="../css/style.css" rel="stylesheet" type="text/css">
 	    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 		<header>
 			<div class="home"><a href="../index.html">pr0stats - pr0gramm.com Statistiken</a></div>
 	
-			<p class="meta"><a href="index.html">alle Analysen</a> |
+			<p class="meta"><a href="index.html">Alle Analysen</a> |
 							auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats">pr0gramm</a> |
 							auf <a href="https://github.com/pr0stats">github</a> |
 							auf <a target="_blank" href="https://twitter.com/pr0stats">twitter</a></p>
@@ -25,9 +25,9 @@
 			<li><a href="#kritik">Kritik</a></li>
 		</ul>
 
-		<h1>Altschwuchteln vs. Neuschwuchteln - Top Uploader <span class="timeframe">01/2007 bis 06/2014</span></h1>
+		<h1>Altschwuchteln vs. Neuschwuchteln - Top Uploader</h1>
 		<span class="prg-link-box">auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats/uploads/220091">pr0gramm</a></span>
-		<a href="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png"><img src="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png" alt="Altschwuchteln vs. Neuschwuchteln - Top Uploader (2007 bis 06/2014)" /></a>
+		<a href="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png"><img src="../img/02-altschwuchteln-vs-neuschwuchteln-top-uploader.png" alt="Altschwuchteln vs. Neuschwuchteln - Top Uploader (2007 bis 07/2014)" /></a>
 
 		<h2 id="annahmen"><a class="headerlink" href="#annahmen" title="Permalink zu diesem Abschnitt">¶</a>Annahmen</h2>
 		<ul>
@@ -38,6 +38,7 @@
 		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li>Zeitraum <code>01/2007</code> bis <code>07/2014</code></li>
 			<li><code class="block">SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
 			<li><code class="block">SELECT `user`, COUNT(*) AS `count` FROM `stats` WHERE FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59:00’ AND `user` != 'anonymous’ GROUP BY `user` ORDER BY `count` DESC LIMIT 0,10</code></li>
 		</ul>

@@ -311,10 +311,11 @@ color: #D23C22;
 
 .date-entry {
 	color: #C3C3C3;
-	font-size: 1.2ex;
+	font-size: 1.5ex;
 	margin-right: 12px;
 }
 
 .timeframe {
-	font-size: 1.2ex;
+	font-size: 1.5ex;
+	margin-left: 12px;
 }

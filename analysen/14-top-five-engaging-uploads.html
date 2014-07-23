@@ -2,7 +2,7 @@
 <html lang="de">
 	<head>
 	    <meta charset="utf-8">
-		<title>Top 5 Uploads nach Interaktionsgrad (2007 bis 07/2014) - pr0stats - pr0gramm.com Statistiken</title>
+		<title>Top 5 Uploads nach Interaktionsgrad (01/2007 bis 07/2014) - pr0stats - pr0gramm.com Statistiken</title>
 	    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
 	    <link href="../css/style.css" rel="stylesheet" type="text/css">
 	    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 		<header>
 			<div class="home"><a href="../index.html">pr0stats - pr0gramm.com Statistiken</a></div>
 	
-			<p class="meta"><a href="index.html">alle Analysen</a> |
+			<p class="meta"><a href="index.html">Alle Analysen</a> |
 							auf <a class="prg-link" target="_blank" href="http://pr0gramm.com/user/pr0stats">pr0gramm</a> |
 							auf <a href="https://github.com/pr0stats">github</a> |
 							auf <a target="_blank" href="https://twitter.com/pr0stats">twitter</a></p>
@@ -25,7 +25,7 @@
 			<li><a href="#kritik">Kritik</a></li>
 		</ul>
 		
-		<h1>Top 5 Uploads nach Interaktionsgrad <span class="timeframe">01/2007 bis 07/2014</span></h1>
+		<h1>Top 5 Uploads nach Interaktionsgrad</h1>
 		<p>Ermittelt wurden die fünf Uploads, die die meiste Interaktion erzeugt haben. Interaktionen sind Upvotes, Downvotes, Comments (und Tags). Die Summe dieser Werte bildet die Interaktionssumme.</p>
 		<code class="block">upvotes + downvotes + # of comments = summe</code>
 
@@ -40,6 +40,7 @@
 		<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
 		<ul>
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+			<li>Zeitraum <code>01/2007</code> bis <code>07/2014</code></li>
 			<li><code class="block">SELECT `id`, `up`, `down`, `comments`, (`up` + `down` + `comments`) AS `result`, CONCAT('http://thumb.pr0gramm.com/', `thumb`) AS `src` FROM `pr0stats` WHERE YEAR(FROM_UNIXTIME(`created`)) = '2014' ORDER BY `result` DESC LIMIT 0, 5</code></li>
 			<li>Der Grad der Interaktion wird ermittelt durch Summe aus <code>upvotes</code> + <code>downvotes</code> + <code>comments</code>; die Anzahl der Tags wäre für diese Erhebung ebenfalls interessant, ist jedoch mit <a href="../methodik.html#tags">gegebenem Tabellenschema</a> umständlich und wird daher ausgelassen</li>
 		</ul>
