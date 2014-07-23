@@ -319,3 +319,30 @@ color: #D23C22;
 	font-size: 1.5ex;
 	margin-left: 12px;
 }
+
+.keynav {
+	position: fixed;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: #fdfdfd;
+	padding: 12px 10px;
+	color: #EAEAEA;
+	cursor: pointer;
+}
+
+.keynav:hover, .keynav.activate {
+	color: #D23C22;
+	background-color: #f9f9f9;
+}
+
+#keynav-left {
+	display: none;
+	left: 0;
+}
+
+#keynav-right {
+	display: none;
+	right: 0;
+}
