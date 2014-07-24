@@ -17,9 +17,23 @@ footer {
 	position: absolute;
 	display: block;
 	width: 96%;
-	margin: 80px -7% 0;
+	margin: 20px -7% 0;
 	padding: 2%;
 	vertical-align: middle;
+}
+
+.edit-link {
+	margin-top: 80px;
+	text-align: center;
+	font-size: 1ex;
+}
+
+.edit-link a {
+	color: #D8D8D8;
+}
+
+.edit-link a:hover {
+	color: #D23C22;
 }
 
 footer .left-box, footer .center-box, footer .right-box {
