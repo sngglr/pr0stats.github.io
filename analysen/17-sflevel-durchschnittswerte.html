@@ -42,7 +42,7 @@
 			<li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
 			<li>Zeitraum <code>07/17/2014</code> bis <code>07/23/2014</code></li>
 			<li><code class="block">SELECT AVG(CAST(`up` AS SIGNED) - CAST(`down` AS SIGNED)) AS  `average`,  `sf_level` FROM  `pr0stats` WHERE DATE(FROM_UNIXTIME(`created`)) &gt;= '2014-07-17' AND  DATE(FROM_UNIXTIME(`created`)) &lt;= '2014-07-23' GROUP BY `sf_level` ORDER BY `sf_level` ASC</code></li>
-			<li><code class="block">"SELECT AVG(CAST(`up` AS SIGNED) - CAST(`down` AS SIGNED)) AS  `average` FROM  `pr0stats` WHERE DATE(FROM_UNIXTIME(`created`)) &gt;= '2014-07-17' AND DATE(FROM_UNIXTIME(`created`)) &lt;= '2014-07-23'</code></li>
+			<li><code class="block">SELECT AVG(CAST(`up` AS SIGNED) - CAST(`down` AS SIGNED)) AS  `average` FROM  `pr0stats` WHERE DATE(FROM_UNIXTIME(`created`)) &gt;= '2014-07-17' AND DATE(FROM_UNIXTIME(`created`)) &lt;= '2014-07-23'</code></li>
 		</ul>
 		
 	 	<!-- JavaScript sources -->
