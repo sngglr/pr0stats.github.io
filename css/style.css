@@ -236,6 +236,7 @@ code.block {
 	display: block;
 	cursor: pointer;
 	color: #888;
+	margin-top: 40px;
 	margin-bottom: 30px;
 	font-size: 1.5ex;
 }
@@ -249,6 +250,8 @@ code.block {
 .thumbnail {
 	max-width: 420px;
 	max-height: 420px;
+	height: 420px;
+	width: 420px;
 }
 
 .thumbnail-box {

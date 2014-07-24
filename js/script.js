@@ -66,7 +66,9 @@ $(document).ready(function() {
 			'12-tagcloud-juli4.html',
 			'13-safe-for-distribution.html',
 			'14-top-five-engaging-uploads.html',
-			'15-tagcloud-wuerde.html'
+			'15-tagcloud-wuerde.html',
+			'16-tagcloud-juni-2014.html',
+			'17-sflevel-durchschnittswerte.html'
 		);
 		var index = pages[0];
 		var currenturl = document.location.pathname;
