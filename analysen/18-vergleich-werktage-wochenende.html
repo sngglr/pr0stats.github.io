@@ -34,10 +34,10 @@
 			<li>Zeitraum <code>01/2007</code> bis <code>07/2014</code></li>
 			<li>Werktage<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &lt; 5</code></li>
 			<li>Wochenende<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &gt;= 5</code></li>
-			<li>Werktage vor Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &lt; 5 AND FROM_UNIXTIME(`created`) &lt; '2014-07-17 14:59'</code></li>
-			<li>Werktage nach Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &lt; 5 AND FROM_UNIXTIME(`created`) &gt;= '2014-07-17 14:59'</code></li>
-			<li>Wochenende vor Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &gt;= 5 AND FROM_UNIXTIME(`created`) &lt; '2014-07-17 14:59'</code></li>
-			<li>Wochenende nach Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &gt;= 5 AND FROM_UNIXTIME(`created`) &gt;= '2014-07-17 14:59'</code></li>
+			<li>Werktage vor Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &lt; 5 AND FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59'</code></li>
+			<li>Werktage nach Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &lt; 5 AND FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59'</code></li>
+			<li>Wochenende vor Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &gt;= 5 AND FROM_UNIXTIME(`created`) &lt; '2014-05-03 14:59'</code></li>
+			<li>Wochenende nach Relaunch<br><code class="block">SELECT AVG(`up`), AVG(`down`), MAX(`up`), MAX(`down`) FROM `pr0stats` WHERE WEEKDAY(FROM_UNIXTIME(`created`)) &gt;= 5 AND FROM_UNIXTIME(`created`) &gt;= '2014-05-03 14:59'</code></li>
 
 		</ul>
 		
