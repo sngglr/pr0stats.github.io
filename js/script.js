@@ -68,7 +68,8 @@ $(document).ready(function() {
 			'14-top-five-engaging-uploads.html',
 			'15-tagcloud-wuerde.html',
 			'16-tagcloud-juni-2014.html',
-			'17-sflevel-durchschnittswerte.html'
+			'17-sflevel-durchschnittswerte.html',
+			'18-vergleich-werktage-wochenende.html'
 		);
 		var index = pages[0];
 		var currenturl = document.location.pathname;
