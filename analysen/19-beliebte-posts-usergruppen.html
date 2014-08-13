@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Beliebte Posts / Usergruppen (Relaunch bis 08/2014) - pr0stats - pr0gramm.com Statistiken</title>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="http://pr0stats.github.io/img/favicon.ico">
+    <link rel="shortcut icon" type="../img/x-icon" href="img/favicon.ico">
+    <link type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+<ul class="toc toc-analysen">
+    <li><a href="#annahmen">Annahmen</a></li>
+    <li><a href="#informationen">Informationen</a></li>
+    <li><a href="#resultate">Resultate</a></li>
+    <li><a href="#methodik">Methodik</a></li>
+    <li><a href="#kritik">Kritik</a></li>
+</ul>
+
+<h1>Beliebte Posts nach Usergruppen seit Relaunch</h1>
+<a href="../img/18-vergleich-werktage-wochenende.png"><img src="../img/19-beliebte-posts-usergruppen.png" alt="Beliebte Posts / Usergruppen" /></a>
+
+<h2 id="annahmen"><a class="headerlink" href="#annahmen" title="Permalink zu diesem Abschnitt">¶</a>Annahmen</h2>
+<ul>
+    <li>Relaunch war am 03.05.2014 um 14:59 (siehe <a href="https://twitter.com/pr0gramm/status/462577172507795456" target="_blank">Tweet zum Relaunch</a>)</li>
+</ul>
+
+<h2 id="methodik"><a class="headerlink" href="#methodik" title="Permalink zu diesem Abschnitt">¶</a>Methodik</h2>
+<ul>
+    <li>siehe <a href="../methodik.html">Hinweise zur Methodik</a></li>
+    <li>Query: <code>SELECT mark, count(id), SUM(promoted<>0), SUM(promoted<>0)/count(id) FROM uploads WHERE created>UNIX_TIMESTAMP("2014-05-03 14:59") GROUP BY mark</code></li>
+</ul>
+
+<!-- JavaScript sources -->
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/template.js"></script>
+<script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

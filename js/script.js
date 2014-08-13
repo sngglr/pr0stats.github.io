@@ -69,7 +69,8 @@ $(document).ready(function() {
 			'15-tagcloud-wuerde.html',
 			'16-tagcloud-juni-2014.html',
 			'17-sflevel-durchschnittswerte.html',
-			'18-vergleich-werktage-wochenende.html'
+			'18-vergleich-werktage-wochenende.html',
+			'19-beliebte-posts-usergruppen.html'
 		);
 		var index = pages[0];
 		var currenturl = document.location.pathname;
